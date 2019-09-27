@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PersonalityInsights
 
 class ResultViewController: UIViewController {
     
@@ -18,10 +19,21 @@ class ResultViewController: UIViewController {
         tv.delegate = self
         return tv
     }()
+    
+    var profileData: Profile? {
+        didSet {
+            updateData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCoolectionView()
+        title = "Result"
+    }
+    
+    func updateData() {
+        collectionView.reloadData()
     }
     
     func setupCoolectionView() {
@@ -34,6 +46,14 @@ class ResultViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
+    
+    func checkArray(item : AnyObject) -> Bool {
+        return item is Array<AnyObject>
+    }
+    
+//    func transformValue(data: Profile) -> Array<Any> {
+//        let v = profileData.flatMap(<#T##transform: (Profile) throws -> U?##(Profile) throws -> U?#>)
+//    }
 }
 
 extension ResultViewController: UICollectionViewDataSource {
@@ -43,6 +63,18 @@ extension ResultViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: indexPath) as! GraphCollectionViewCell
+        cell.profileData = profileData
+        switch indexPath.item {
+        case 0:
+            cell.titleLabel.text = "Personality"
+        case 1:
+            cell.titleLabel.text = "Consumer Needs"
+        case 2:
+            cell.titleLabel.text = "Values"
+        default:
+            break
+        }
+        cell.tableView.reloadData()
         return cell
     }
 }

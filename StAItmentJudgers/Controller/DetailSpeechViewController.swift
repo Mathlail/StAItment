@@ -8,8 +8,14 @@
 
 import UIKit
 import PersonalityInsights
+import NVActivityIndicatorView
 
-class DetailSpeechViewController: UIViewController {
+protocol DetailSpeechDelegate {
+    func didEndAnalyze(profile: Profile)
+}
+
+class DetailSpeechViewController: UIViewController, NVActivityIndicatorViewable {
+    var delegate: DetailSpeechDelegate?
     
     lazy var scroll: UIScrollView = {
         let sc = UIScrollView()
@@ -162,6 +168,11 @@ class DetailSpeechViewController: UIViewController {
         
     }
     
+    func showLoading() {
+        let size = CGSize(width: 90, height: 90)
+        startAnimating(size, message: "Analyzing...", type: .lineScalePulseOutRapid, color: .white, fadeInAnimation: nil)
+    }
+    
     @objc func back() {
         dismiss(animated: true, completion: nil)
     }
@@ -174,21 +185,26 @@ class DetailSpeechViewController: UIViewController {
     }
     
     @objc func didTapAnalyze() {
-        
-//        let personalityInsights = PersonalityInsights(version: getCurrentDate(), apiKey: "j5kpTWXOsrFmESBjtq2-bN2O2SkZn2WuC1ry1b-dnEu8")
-//        personalityInsights.serviceURL = "https://gateway-syd.watsonplatform.net/personality-insights/api"
-//        personalityInsights.defaultHeaders["Content-Type"] = "text/plain;charset=utf-8"
-//        personalityInsights.defaultHeaders["X-Watson-Learning-Opt-Out"] = "true"
-//        personalityInsights.profile(profileContent: ProfileContent.text(speechTextView.text)) {
-//            response, error in
-//
-//            guard let profile = response?.result else {
-//                print(error?.localizedDescription ?? "unknown error")
-//                return
-//            }
-//            print(profile)
-//
-//        }
+        showLoading()
+        let personalityInsights = PersonalityInsights(version: getCurrentDate(), apiKey: "j5kpTWXOsrFmESBjtq2-bN2O2SkZn2WuC1ry1b-dnEu8")
+        personalityInsights.serviceURL = "https://gateway-syd.watsonplatform.net/personality-insights/api"
+        personalityInsights.defaultHeaders["Content-Type"] = "text/plain;charset=utf-8"
+        personalityInsights.defaultHeaders["X-Watson-Learning-Opt-Out"] = "true"
+        personalityInsights.profile(profileContent: ProfileContent.text(speechTextView.text)) {
+            response, error in
+
+            guard let profile = response?.result else {
+                print(error?.localizedDescription ?? "unknown error")
+                return
+            }
+            DispatchQueue.main.async {
+                self.stopAnimating(nil)
+                self.dismiss(animated: true, completion: {
+                    self.delegate?.didEndAnalyze(profile: profile)
+                })
+            }
+            
+        }
     }
 
     

@@ -5,6 +5,9 @@ target 'StAItmentJudgers' do
     pod 'BMSCore', '~> 2.0'
     pod 'IBMWatsonPersonalityInsightsV3', '~> 2.2.0'
     pod 'Hero'
+    pod 'Floaty', '~> 4.2.0'
+    pod 'IQKeyboardManager'
+    pod 'NVActivityIndicatorView'
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 

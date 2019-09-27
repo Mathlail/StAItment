@@ -5,7 +5,7 @@
 
 import UIKit
 import BMSCore
-
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 3.0)
+        IQKeyboardManager.shared().isEnabled = true
         let myBMSClient = BMSClient.sharedInstance
         myBMSClient.initialize(bluemixRegion: BMSClient.Region.sydney)
         myBMSClient.requestTimeout = 10.0 // seconds

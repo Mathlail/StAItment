@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3C658DF316B0F325E0D47B7B /* Pods_StAItmentJudgers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588E03443573F2DDF2BE953 /* Pods_StAItmentJudgers.framework */; };
+		4C0DA615233B4BC500E959F7 /* AnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DA614233B4BC500E959F7 /* AnalysisTableViewCell.swift */; };
+		4C10E514233C9716004ECF18 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E513233C9716004ECF18 /* BaseViewController.swift */; };
+		4C10E516233C9767004ECF18 /* CommonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E515233C9767004ECF18 /* CommonInputView.swift */; };
 		4CB09EFE233345D300FE9B78 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CB09EFD233345D300FE9B78 /* profile.json */; };
 		4CB09F0023335B1500FE9B78 /* test.htm in Resources */ = {isa = PBXBuildFile; fileRef = 4CB09EFF23335B1500FE9B78 /* test.htm */; };
 		4CB09F0223337D7900FE9B78 /* ListFiguresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB09F0123337D7900FE9B78 /* ListFiguresViewController.swift */; };
@@ -55,6 +58,9 @@
 		11E82E2A01DF386A2BD70BE6 /* Pods-StAItmentJudgers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StAItmentJudgers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StAItmentJudgers/Pods-StAItmentJudgers.debug.xcconfig"; sourceTree = "<group>"; };
 		1C8444BFD52D97CDB7A1B788 /* Pods_StAItmentJudgersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StAItmentJudgersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CCAB15229E227CD9B62C913 /* Pods-StAItmentJudgers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StAItmentJudgers.release.xcconfig"; path = "Pods/Target Support Files/Pods-StAItmentJudgers/Pods-StAItmentJudgers.release.xcconfig"; sourceTree = "<group>"; };
+		4C0DA614233B4BC500E959F7 /* AnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisTableViewCell.swift; sourceTree = "<group>"; };
+		4C10E513233C9716004ECF18 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4C10E515233C9767004ECF18 /* CommonInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInputView.swift; sourceTree = "<group>"; };
 		4CB09EFD233345D300FE9B78 /* profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
 		4CB09EFF23335B1500FE9B78 /* test.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.htm; sourceTree = "<group>"; };
 		4CB09F0123337D7900FE9B78 /* ListFiguresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFiguresViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 			children = (
 				4CCFF0312334A60100D0F975 /* ListCaseCollectionViewCell.swift */,
 				4CE6FC3B2338A22700D8E74E /* GraphCollectionViewCell.swift */,
+				4C0DA614233B4BC500E959F7 /* AnalysisTableViewCell.swift */,
+				4C10E515233C9767004ECF18 /* CommonInputView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 				4CB09F0123337D7900FE9B78 /* ListFiguresViewController.swift */,
 				4CE5905D2333FBE60019B456 /* DetailSpeechViewController.swift */,
 				4CE6FC392338A09800D8E74E /* ResultViewController.swift */,
+				4C10E513233C9716004ECF18 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 				TargetAttributes = {
 					555C91A71D0F0731003E84E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RUW882EMTM;
 						LastSwiftMigration = 0800;
 					};
 					555C91BB1D0F0731003E84E3 = {
@@ -411,17 +421,23 @@
 				"${PODS_ROOT}/Target Support Files/Pods-StAItmentJudgers/Pods-StAItmentJudgers-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BMSAnalyticsAPI/BMSAnalyticsAPI.framework",
 				"${BUILT_PRODUCTS_DIR}/BMSCore/BMSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IBMWatsonPersonalityInsightsV3/PersonalityInsights.framework",
 				"${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSAnalyticsAPI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PersonalityInsights.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RestKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -476,7 +492,10 @@
 				4CCFF0332334A60100D0F975 /* ListCaseCollectionViewCell.swift in Sources */,
 				4CE590512333F2E80019B456 /* SpeechModel.swift in Sources */,
 				4CE6FC3A2338A09800D8E74E /* ResultViewController.swift in Sources */,
+				4C10E514233C9716004ECF18 /* BaseViewController.swift in Sources */,
+				4C10E516233C9767004ECF18 /* CommonInputView.swift in Sources */,
 				4CE5905E2333FBE60019B456 /* DetailSpeechViewController.swift in Sources */,
+				4C0DA615233B4BC500E959F7 /* AnalysisTableViewCell.swift in Sources */,
 				555C91AC1D0F0731003E84E3 /* AppDelegate.swift in Sources */,
 				4CB09F0223337D7900FE9B78 /* ListFiguresViewController.swift in Sources */,
 			);
@@ -648,6 +667,7 @@
 			baseConfigurationReference = 11E82E2A01DF386A2BD70BE6 /* Pods-StAItmentJudgers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RUW882EMTM;
 				INFOPLIST_FILE = StAItmentJudgers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -662,6 +682,7 @@
 			baseConfigurationReference = 1CCAB15229E227CD9B62C913 /* Pods-StAItmentJudgers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RUW882EMTM;
 				INFOPLIST_FILE = StAItmentJudgers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

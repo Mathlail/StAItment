@@ -9,6 +9,8 @@
 import UIKit
 import SafariServices
 import Hero
+import PersonalityInsights
+import Floaty
 
 class ListFiguresViewController: UIViewController {
     
@@ -36,6 +38,7 @@ class ListFiguresViewController: UIViewController {
         title = "Speeches"
         
         setupCoolectionView()
+        setupFloatingButton()
 //        let url = URL(string: "https://jamesclear.com/great-speeches/the-danger-of-a-single-story-by-chimamanda-ngozi-adichie")
 //        let safari = SFSafariViewController(url: url!, entersReaderIfAvailable: true)
 //        present(safari, animated: true, completion: nil)
@@ -45,7 +48,38 @@ class ListFiguresViewController: UIViewController {
 //            webView.loadHTMLString(htmlString, baseURL: nil)
 //        } catch {
 //            print("error")
+//    }
         
+    }
+    
+    func setupFloatingButton() {
+        let button = Floaty()
+        button.buttonColor = .black
+        button.plusColor = .white
+        button.size = 45
+        button.paddingX = 25
+        button.itemButtonColor = .black
+        button.addItem(icon: #imageLiteral(resourceName: "pencil")) { (item) in
+            let vc = BaseViewController()
+            let heroId = "1"
+            button.hero.id = heroId
+            vc.hero.isEnabled = true
+            vc.commonView.hiddenTextview(isHidden: false)
+            vc.commonView.speechTextView.hero.id = heroId
+            vc.delegate = self
+            self.navigationController?.present(vc, animated: true, completion: nil)
+        }
+        button.addItem(icon: #imageLiteral(resourceName: "icons8-link-96 (1)")) { (item) in
+            let vc = BaseViewController()
+            let heroId = "2"
+            button.hero.id = heroId
+            vc.commonView.hiddenTextview(isHidden: true)
+            vc.hero.isEnabled = true
+            vc.commonView.URLTextfield.hero.id = heroId
+            vc.delegate = self
+            self.navigationController?.present(vc, animated: true, completion: nil)
+        }
+        view.addSubview(button)
     }
     
 
@@ -78,19 +112,20 @@ extension ListFiguresViewController: UICollectionViewDataSource {
 
 extension ListFiguresViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForItem(at: indexPath) as! ListCaseCollectionViewCell
-//        let heroId = "cell\(indexPath.item)"
-//        cell.imageFigure.hero.id = heroId
-//        let vc = DetailSpeechViewController()
-//        vc.hero.isEnabled = true
-//        vc.speechModel = dataSpeches[indexPath.item]
-//        vc.view.backgroundColor = .white
-//        vc.imageFigure.hero.id = heroId
-//        navigationController?.present(vc, animated: true, completion: nil)
+        let cell = collectionView.cellForItem(at: indexPath) as! ListCaseCollectionViewCell
+        let heroId = "cell\(indexPath.item)"
+        cell.imageFigure.hero.id = heroId
+        let vc = DetailSpeechViewController()
+        vc.delegate = self
+        vc.hero.isEnabled = true
+        vc.speechModel = dataSpeches[indexPath.item]
+        vc.view.backgroundColor = .white
+        vc.imageFigure.hero.id = heroId
+        navigationController?.present(vc, animated: true, completion: nil)
         
         
-        let vc = ResultViewController()
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = ResultViewController()
+//        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -110,5 +145,13 @@ extension ListFiguresViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+}
+
+extension ListFiguresViewController: DetailSpeechDelegate {
+    func didEndAnalyze(profile: Profile) {
+        let vc = ResultViewController()
+        vc.profileData = profile
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
