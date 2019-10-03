@@ -11,16 +11,9 @@
 		4C0DA615233B4BC500E959F7 /* AnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DA614233B4BC500E959F7 /* AnalysisTableViewCell.swift */; };
 		4C10E514233C9716004ECF18 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E513233C9716004ECF18 /* BaseViewController.swift */; };
 		4C10E516233C9767004ECF18 /* CommonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E515233C9767004ECF18 /* CommonInputView.swift */; };
-		4CB09EFE233345D300FE9B78 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CB09EFD233345D300FE9B78 /* profile.json */; };
-		4CB09F0023335B1500FE9B78 /* test.htm in Resources */ = {isa = PBXBuildFile; fileRef = 4CB09EFF23335B1500FE9B78 /* test.htm */; };
 		4CB09F0223337D7900FE9B78 /* ListFiguresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB09F0123337D7900FE9B78 /* ListFiguresViewController.swift */; };
 		4CCFF0332334A60100D0F975 /* ListCaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCFF0312334A60100D0F975 /* ListCaseCollectionViewCell.swift */; };
 		4CE590512333F2E80019B456 /* SpeechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE590502333F2E80019B456 /* SpeechModel.swift */; };
-		4CE590582333F8E00019B456 /* Ronald-Reagan.htm in Resources */ = {isa = PBXBuildFile; fileRef = 4CE590532333F8E00019B456 /* Ronald-Reagan.htm */; };
-		4CE590592333F8E00019B456 /* John-Kennedy.htm in Resources */ = {isa = PBXBuildFile; fileRef = 4CE590542333F8E00019B456 /* John-Kennedy.htm */; };
-		4CE5905A2333F8E00019B456 /* Winston-Churchill.htm in Resources */ = {isa = PBXBuildFile; fileRef = 4CE590552333F8E00019B456 /* Winston-Churchill.htm */; };
-		4CE5905B2333F8E00019B456 /* Mahatma-Gandhi.htm in Resources */ = {isa = PBXBuildFile; fileRef = 4CE590562333F8E00019B456 /* Mahatma-Gandhi.htm */; };
-		4CE5905C2333F8E00019B456 /* Franklin.html in Resources */ = {isa = PBXBuildFile; fileRef = 4CE590572333F8E00019B456 /* Franklin.html */; };
 		4CE5905E2333FBE60019B456 /* DetailSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5905D2333FBE60019B456 /* DetailSpeechViewController.swift */; };
 		4CE6FC3A2338A09800D8E74E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6FC392338A09800D8E74E /* ResultViewController.swift */; };
 		4CE6FC3C2338A22700D8E74E /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6FC3B2338A22700D8E74E /* GraphCollectionViewCell.swift */; };
@@ -61,16 +54,9 @@
 		4C0DA614233B4BC500E959F7 /* AnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisTableViewCell.swift; sourceTree = "<group>"; };
 		4C10E513233C9716004ECF18 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4C10E515233C9767004ECF18 /* CommonInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInputView.swift; sourceTree = "<group>"; };
-		4CB09EFD233345D300FE9B78 /* profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
-		4CB09EFF23335B1500FE9B78 /* test.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.htm; sourceTree = "<group>"; };
 		4CB09F0123337D7900FE9B78 /* ListFiguresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFiguresViewController.swift; sourceTree = "<group>"; };
 		4CCFF0312334A60100D0F975 /* ListCaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCaseCollectionViewCell.swift; path = StAItmentJudgers/ListCaseCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		4CE590502333F2E80019B456 /* SpeechModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechModel.swift; sourceTree = "<group>"; };
-		4CE590532333F8E00019B456 /* Ronald-Reagan.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Ronald-Reagan.htm"; sourceTree = "<group>"; };
-		4CE590542333F8E00019B456 /* John-Kennedy.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "John-Kennedy.htm"; sourceTree = "<group>"; };
-		4CE590552333F8E00019B456 /* Winston-Churchill.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Winston-Churchill.htm"; sourceTree = "<group>"; };
-		4CE590562333F8E00019B456 /* Mahatma-Gandhi.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Mahatma-Gandhi.htm"; sourceTree = "<group>"; };
-		4CE590572333F8E00019B456 /* Franklin.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Franklin.html; sourceTree = "<group>"; };
 		4CE5905D2333FBE60019B456 /* DetailSpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpeechViewController.swift; sourceTree = "<group>"; };
 		4CE6FC392338A09800D8E74E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		4CE6FC3B2338A22700D8E74E /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -154,18 +140,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4CE590522333F7790019B456 /* Speeches */ = {
-			isa = PBXGroup;
-			children = (
-				4CE590572333F8E00019B456 /* Franklin.html */,
-				4CE590542333F8E00019B456 /* John-Kennedy.htm */,
-				4CE590562333F8E00019B456 /* Mahatma-Gandhi.htm */,
-				4CE590532333F8E00019B456 /* Ronald-Reagan.htm */,
-				4CE590552333F8E00019B456 /* Winston-Churchill.htm */,
-			);
-			path = Speeches;
-			sourceTree = "<group>";
-		};
 		545C9DD4D3D79A706E9BC9CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,8 +153,6 @@
 		555C919F1D0F0731003E84E3 = {
 			isa = PBXGroup;
 			children = (
-				4CB09EFD233345D300FE9B78 /* profile.json */,
-				4CB09EFF23335B1500FE9B78 /* test.htm */,
 				555C91AA1D0F0731003E84E3 /* StAItmentJudgers */,
 				555C91BF1D0F0731003E84E3 /* StAItmentJudgersTests */,
 				555C91CA1D0F0731003E84E3 /* StAItmentJudgersUITests */,
@@ -205,7 +177,6 @@
 			children = (
 				4CCFF0342334A6F200D0F975 /* Controller */,
 				4CCFF02F2334A5E500D0F975 /* View */,
-				4CE590522333F7790019B456 /* Speeches */,
 				4CE5904F2333F29E0019B456 /* Model */,
 				D5F7598FF37D4FBB88A2FC0E /* BMSCredentials.plist */,
 				555C91AB1D0F0731003E84E3 /* AppDelegate.swift */,
@@ -363,14 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE5905C2333F8E00019B456 /* Franklin.html in Resources */,
-				4CE5905B2333F8E00019B456 /* Mahatma-Gandhi.htm in Resources */,
-				4CB09EFE233345D300FE9B78 /* profile.json in Resources */,
-				4CE590592333F8E00019B456 /* John-Kennedy.htm in Resources */,
-				4CE590582333F8E00019B456 /* Ronald-Reagan.htm in Resources */,
-				4CB09F0023335B1500FE9B78 /* test.htm in Resources */,
 				C288DADEED2B4F6A9F4DAE61 /* BMSCredentials.plist in Resources */,
-				4CE5905A2333F8E00019B456 /* Winston-Churchill.htm in Resources */,
 				555C91B61D0F0731003E84E3 /* LaunchScreen.storyboard in Resources */,
 				555C91B31D0F0731003E84E3 /* Assets.xcassets in Resources */,
 				555C91B11D0F0731003E84E3 /* Main.storyboard in Resources */,

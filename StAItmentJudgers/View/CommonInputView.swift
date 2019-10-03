@@ -47,7 +47,6 @@ class CommonInputView: UIControl {
         button.setTitleColor(.white, for: .normal)
         button.setTitle("Analyze", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
-//        button.addTarget(self, action: #selector(didTapAnalyze), for: .touchUpInside)
         button.backgroundColor = .black
         return button
     }()
@@ -101,7 +100,7 @@ class CommonInputView: UIControl {
     func setupView() {
         addSubview(safeAreaView)
         addSubview(analyzeButton)
-        self.addSubview(scroll)
+        addSubview(scroll)
         scroll.addSubview(innerView)
         innerView.addSubview(URLTextfield)
         innerView.addSubview(speechTextView)

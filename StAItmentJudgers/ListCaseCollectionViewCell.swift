@@ -29,11 +29,7 @@ class ListCaseCollectionViewCell: UICollectionViewCell {
         view.clipsToBounds = true
         view.layer.cornerRadius = 9
         view.translatesAutoresizingMaskIntoConstraints = false
-        if #available(iOS 11.0, *) {
-            view.backgroundColor = UIColor(named: "Dark")
-        } else {
-            // Fallback on earlier versions
-        }
+        view.backgroundColor = UIColor().getDarkColor()
         return view
     }()
     

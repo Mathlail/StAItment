@@ -18,7 +18,7 @@ struct SpeechModel {
 }
 
 enum SpeechText {
-    case winstonChurchill, mahatmaGandhi, johnFKennedy, ronaldReagan, franklinRoosevelt
+    case winstonChurchill, mahatmaGandhi, johnFKennedy, ronaldReagan, franklinRoosevelt, jokowi, prabowo
 }
 
 func getSpeech(figure: SpeechText) -> String {
@@ -244,6 +244,345 @@ func getSpeech(figure: SpeechText) -> String {
         I know how imperfect our Ahimsa is and how far away we are still from the ideal, but in Ahimsa there is no final failure or defeat. I have faith, therefore, that if, in spite of our shortcomings, the big thing does happen, it will be because God wanted to help us by crowning with success our silent, unremitting Sadhana1 for the last twenty-two years.
         I believe that in the history of the world, there has not been a more genuinely democratic struggle for freedom than ours. I read Carlyle’s French Resolution while I was in prison, and Pandit Jawaharlal has told me something about the Russian revolution. But it is my conviction that inasmuch as these struggles were fought with the weapon of violence they failed to realize the democratic ideal. In the democracy which I have envisaged, a democracy established by non-violence, there will be equal freedom for all. Everybody will be his own master. It is to join a struggle for such democracy that I invite you today. Once you realize this you will forget the differences between the Hindus and Muslims, and think of yourselves as Indians only, engaged in the common struggle for independence.
         Then, there is the question of your attitude towards the British. I have noticed that there is hatred towards the British among the people. The people say they are disgusted with their behaviour. The people make no distinction between British imperialism and the British people. To them, the two are one This hatred would even make them welcome the Japanese. It is most dangerous. It means that they will exchange one slavery for another. We must get rid of this feeling. Our quarrel is not with the British people, we fight their imperialism. The proposal for the withdrawal of British power did not come out of anger. It came to enable India to play its due part at the present critical juncture It is not a happy position for a big country like India to be merely helping with money and material obtained willy-nilly from her while the United Nations are conducting the war. We cannot evoke the true spirit of sacrifice and velour, so long as we are not free. I know the British Government will not be able to withhold freedom from us, when we have made enough self-sacrifice. We must, therefore, purge ourselves of hatred. Speaking for myself, I can say that I have never felt any hatred. As a matter of fact, I feel myself to be a greater friend of the British now than ever before. One reason is that they are today in distress. My very friendship, therefore, demands that I should try to save them from their mistakes. As I view the situation, they are on the brink of an abyss. It, therefore, becomes my duty to warn them of their danger even though it may, for the time being, anger them to the point of cutting off the friendly hand that is stretched out to help them. People may laugh, nevertheless that is my claim. At a time when I may have to launch the biggest struggle of my life, I may not harbour hatred against anybody.
+        """
+    case .jokowi:
+        return """
+        Bapak, Ibu, brother and sister compatriots. All the people of Indonesia whom I love. Ladies and gentlemen of the audience.
+        
+        We all have to be aware that now we live in a very dynamic global environment. We know the characteristics of this global phenomenon: full of change, full of velocity, full of risk, full of complexity and full of surprises that are far from what we expected.
+        
+        Because of that, we have to find a new model, a new method and new values when looking for solutions to every problem with innovation and we all have to be willing [to change] and we will force [people] to be willing [to change]. We have to abandon old methods, old patterns, both in managing institutions and in managing government. That which is no longer effective, we will make effective. That which is no longer efficient, we will make efficient!
+        
+        This is the type of management that we need right now. We have work toward a country that is more productive, that is competitive, that is highly flexible in facing changes. Therefore, we have prepared big stages.
+        
+        First, we will continue the development of infrastructure. We have already built large infrastructure. Going forward, we will continue building faster and we will connect those large [pieces of] infrastructure, such as toll roads, trains, seaports and airports, with the people's production areas. We will connect them with small industrial areas, with special economic zones, with tourist areas. We will also connect the large infrastructure with farming areas, plantation areas and fishery ponds.
+        
+        Secondly, the development of human resources. We will prioritize the development of human resources, which is the key to Indonesia's future. The starting point of developing human resources is by guaranteeing the health of pregnant women, babies, toddlers and school children. These are the golden years to create excellent Indonesians for the future. This has to be closely monitored. There cannot be an increase in stunting, maternal mortality, or child mortality. That is where our great task lies!
+        
+        We will also continue to improve the quality of education. Vocational training and vocational schools are very important. We will also create the Indonesian Talent Management Institution. The government will identify, facilitate and support education and self-improvement for Indonesia's talents.
+        
+        We have to support talented members of the diaspora so that they can contribute to Indonesia's development. We will create a special institution to manage these great talents who can make this country globally competitive.
+        
+        Third, we must also invite as much investment as possible in order to create jobs. No one should be allergic to investment. This is how we create as many jobs as possible. Therefore, anything that obstructs investment must be trimmed, such as slow or complicated permit processes, especially illegal levies. Be careful, going forward I guarantee that I will chase, I will control, I will check and I will beat [them] up if necessary! There should no longer be any obstructions to investment because this is the key to creating more jobs.
+        
+        Fourth, it is very important that we reform our bureaucracy: Structural reform, so that institutions are simpler, more agile. Be careful! If the mindset of the bureaucracy does not change, I guarantee that I will trim it.
+        
+        The speed of service, the speed of providing permits, is the key to bureaucratic reform. I will check it myself, I will control it myself. The moment I see something that is inefficient or ineffective, I guarantee I will trim it, I will remove the official in charge. Therefore, I need brave ministers. If there is an institution that is not useful and problematic, I will dissolve it.
+        
+        No more old mindsets! No more linear work, no more routine work, no more monotone work, no more working in the comfort zone. We have to change. We have to develop new values in work because we have to quickly adapt to the times. That is why we have continued to develop an adaptive, productive, innovative and competitive Indonesia.
+        
+        Fifth, we have to guarantee that the use of the state budget is focused and targeted. We have to ensure that every rupiah that comes out of the state budget has economic utility, provides benefits to the people and improves the public's prosperity.
+        
+        Ladies and gentlemen, I also have to remind you that these big dreams can only be achieved if we are united, optimistic and confident. We have to remember that our country is a big country, with 17,000 islands, with a strategic geopolitical location. We are a country that is united in diversity and has an amazing wealth of culture. Our demographics are also very strong, with a total population of 267 million, most of whom are in productive age.
+        
+        We have to be optimistic toward the future! We have to be confident and brave in facing the challenge of global competition. We have to believe that we can be one of the strongest countries in the world.
+        
+        National unity is the main thing binding us in achieving advancement. We have to continually strengthen our unity and brotherhood. Only by uniting can we become a strong and internationally respected country. The ideology of Pancasila is the only national ideology and every citizen has to be a part of it.
+        
+        In a democracy, being a die-hard supporter of a candidate is permitted. Supporting [a candidate] militantly is also permitted. Acting as opposition is also very noble. Go ahead. As long as that opposition does not create resentment and hatred, much less become coupled with insults and curses.
+        
+        We have religious norms, ethics, etiquette and a noble culture.
+        
+        Pancasila is our collective home as compatriots. There is zero tolerance for those who disturb and take issue with Pancasila. There should no longer be any Indonesians who are not united in diversity, who are intolerant toward differences. There should no longer be any Indonesians who do not respect other religions, other tribes and other ethnicities.
+        
+        Once again, our ideology is Pancasila. We want to be united in diversity together. Getting along is beautiful. Brotherhood is beautiful. Unity is beautiful.
+        
+        I am certain that we are all committed to a civilized democracy that upholds the identity and dignity of Indonesia, that will make Indonesia become an advanced, just and prosperous Indonesia.
+        
+        An advanced Indonesia is an Indonesia where not a single citizen is left behind from achieving their dreams. A democratic Indonesia, whose fruits are enjoyed by all the people. An Indonesia where every citizen has the same rights before the law. An Indonesia that masters knowledge and world-class technology. An Indonesia that can protect and maintain the country in an increasingly competitive world.
+        
+        This is not about me, or you. And not about us, or them. Not about West or East, or South or North. Now is not the time to think about all that. It is the time to think about our nation as a whole. Don't ever hesitate to move forward because we are capable if we are united!
+        
+        Thank you.
+        
+
+        """
+    case .prabowo:
+        return """
+        Thank you. Tonight, all of you have taken the time to listen and witness us, Prabowo Subianto and Sandiaga Uno, convey our vision and mission.
+        
+        I would like to open my speech tonight by reading a poem. This poem helps to illustrate why we are gathered, or feel connected tonight.
+        
+        This poem was written by a young officer who died in the Battle of Banten in the year 1946.
+        
+        We are not alone.
+        
+        Thousands are relying on us.
+        
+        People we've never known
+        
+        People we might never know.
+        
+        But what we decide to do now will determine what happens to them.
+        
+        My fellow countrymen, tonight, we are gathered here, and millions are connected to us through technology, because in 92 days, we will decide the fate and future of this country. This presidential election is not about voting for Prabowo or Sandiaga Uno. This presidential election is for Indonesia.
+        
+        Therefore, the victory we will hopefully achieve on April 17, 2019 will not be Prabowo's victory, nor Sandiaga Uno's. It will be a victory for the Indonesian people.
+        
+        With this belief, we want all Indonesians to truly understand what we will strive for in the next five years, if we and the party members of the Just and Prosperous Indonesia Coalition earn the people's mandate in the upcoming election on April 17, 2019.
+        
+        We would like to convey our concerns, what encourage us to stay on the political scene, and offer ourselves to lead the Unitary State of the Republic of Indonesia.
+        
+        Ladies and gentlemen, a while back, I got a report that a farmer named Mr. Hardi in Tawangharjo village, Grobokan, had hung himself from a teak tree in his backyard.
+        
+        The late Mr. Hardi left behind his wife and child due to his inability to repay his debt; he felt that the economic burden he was carrying had become too heavy.
+        
+        Over the past few years, I received dozens of reports of tragic stories like this.
+        
+        There was a teacher in Pekalongan who committed suicide. Most recently, on Jan. 4, there was Ms. Sudarsi in Watusigar village in Gunungkidul, who also committed suicide.
+        
+        These stories are only those mentioned in the news. There are probably more like this out there we don't hear about.
+        
+        During my visit to Klaten, the rice farmers were devastated because two months after their harvest, imported rice flooded into the country.
+        
+        In East Java, sugar cane farmers are complaining because when they harvest, a flood of sugar arrives from abroad.
+        
+        At the same time, many mothers and housewives are also complaining because the price of sugar in Indonesia is two to three times higher than the world average. Whereas in the past, Indonesia had once been a sugar exporter.
+        
+        My fellow countrymen, is this the country our nation's founders aspired and fought for?
+        
+        Bung Karno and Bung Hatta, Bung Syahrir, Gen. Sudirman, K.H. Hasyim Ashari and K.H. Wahid Hasyim? By K.H. Agus Salim? By Bung Tomo?
+        
+        The country where hospitals are rejecting patients because the Social Security Administrator for Health (BPJS Kesehatan) has not been paid for months and hospitals are forced to reduce the quality their of services?
+        
+        One in three children are stunted due to a lack of protein, because their mothers are malnourished during pregnancy.
+        
+        A country that continues to increase debt to pay debts, and increase debt to pay for the government's operational needs; that is paying civil servants' salaries.
+        
+        A country that exposes our state-owned enterprises to financial risks. Garuda, Indonesia's national flag carrier, a company born during our struggle for independence, suffered a big loss.
+        
+        Pertamina, the development support company of the Republic of Indonesia, is now facing difficulties. Likewise, utility company Perusahaan Listrik Negara (PLN) and Krakatau Steel. Even if state-owned enterprises are profitable, they are not profitable enough.
+        
+        A country where some people live only three hours from the State Palace but cannot afford to go to school because they have not eaten for two days.
+        
+        A country that some time ago lost dozens of children in Asmat district due to starvation, because government officials were not present to help those in need.
+        
+        This is what I call the Indonesian paradox. Despite being a rich country, many of its people are still poor.
+        
+        If we are not careful, if we are not vigilant, if we do not change, if we do not act immediately, this situation will worsen.
+        
+        We are advancing in this election because we believe these things should not happen in an independent country.
+        
+        It's easy to say, "Indonesia will last a thousand years," but my fellow countrymen, if a state is unable to pay for hospitals, cannot guarantee food for its people, have a weak military system. Can it last a thousand years? Will a country whose national fuel reserves can only last 20 days, and whose rice reserves are less than 3 million tons, survive if there is a sudden attack or security crisis?
+        
+        The current minister of defense also states that if there is to be a war, Indonesia can just survive for three days because we only have enough ammunition for three days.
+        
+        This statement does not come from me, but from the government itself.
+        
+        We must remember, competition between nations is tough. The history of human civilization for thousands of years is harsh. We must not wish for other nations' pity.
+        
+        We must not forget the law of Thucydides, a historian who lived approximately 50 years before Christ.
+        
+        The law of Thucydides states: The strong do what they can and the weak suffer what they must.
+        
+        This lesson is taught in all strategic studies institutions, in all military schools throughout the world.
+        
+        Fellow countrymen, I have conveyed the reason Sandiaga Uno and I and the supporting parties are running in the 2019 presidential election.
+        
+        I will now tell you what we will do, strategies we are going to implement over the next five years, if we are elected.
+        
+        I will also ask for your help, my fellow Indonesians, to realize our collective dreams and aspirations.
+        
+        My fellow countrymen, the Indonesian people, wherever you may be, we must rethink where this development and management of Indonesia is going.
+        
+        A reorientation of the development and management of Indonesia is needed because a strong nation can only be realized if the country can have food self-sufficiency.
+        
+        Having strong government institutions, including the judicial system, superior and honest judges, superior and honest prosecutors, police officers, intelligence officers that are superior and loyal to the country and its people.
+        
+        Also, a strong army. A strong military, a military for the people that is loyal to the country and its people. A military that can compete with the best in the world.
+        
+        My fellow countrymen, we named our vision and mission, "Victorious Indonesia." Indonesia must win. We shall not lose. We will not be beggars. And not become a nation mired in debt. Not a nation that does not defend its own people. To realize a Victorious Indonesia, we must carry out our Big Push Strategy.
+        
+        This strategy can help us realize food self-sufficiency; energy self-sufficiency, mainly fuel; self-sufficiency in clean water; and strong government institutions.
+        
+        My fellow countrymen, to achieve all this, we have outlined five focus points of our national work program.
+        
+        Our first is achieving an economy that prioritizes the people, justice, prosperity, proficiency, and which is environmentally conscious. So that our environment, our land, can be used by our children, grandchildren and great-grandchildren. Future generations.
+        
+        With this, we want to create jobs for our people, the people of Indonesia. We will strengthen our people's purchasing power.
+        
+        If the people have enough money, the economic engine will operate properly. Factories will run. Production will increase. People's needs will be fulfilled.
+        
+        We have previously produced sophisticated aircraft and high-technology products. Now I ask, are we able to do what we did then?
+        
+        I believe we can.
+        
+        We must make national cars, helicopters, commercial ships, cargo ships, warships.
+        
+        We should be able to develop these technologies ourselves because we are the fourth- largest nation in the world.
+        
+        Industrialization is a must for our country. We will make Indonesia's industries like those in India, like South Korea that have world-class industrial companies.
+        
+        Not like today, where economists believe de-industrialization is occurring in Indonesia. We will also ensure that our important state-owned enterprises, like Krakatau Steel, Pertamina and Garuda, are strong enough to be profitable for the country.
+        
+        We do not want to be at the bottom of the pyramid anymore!
+        
+        We want our children to be pilots, seamen and entrepreneurs. They will not be enslaved by other nations!
+        
+        We will stop the leakage of money abroad by implementing right and just policies for all Indonesians.
+        
+        We will empower and incentivize small and medium enterprises.
+        
+        We will provide subsidies and social assistance programs for those in need, to make sure that all Indonesians are able to meet their basic needs.
+        
+        We will build high-quality infrastructure to benefit all segments of society by not inflating project prices.
+        
+        We will make sure that the government's debt does not inflate, let alone jeopardize the state's financial position.
+        
+        We will transform millions of hectares of degraded forest into productive land for food production, energy, clean water and create jobs for our people.
+        
+        We will establish banks for farmers and fishermen to help them get adequate capital and technology.
+        
+        To all Indonesians who risk their lives on the street as drivers, we will provide legal certainty for online motorcycle taxi drivers, taxi drivers and bus drivers, and set minimum rates that benefit both employees and businesses.
+        
+        We will increase the salaries of all soldiers, policemen, policewomen and government workers in remote areas. We will meet the needs of the judiciary, the attorney general, and police. We will even multiply their staff because they are vital to the government of the Republic of Indonesia.
+        
+        Our second point of focus is to increase quality of life and social welfare.
+        
+        In this instance, we will fight poverty, improve health care and increase the quality of our education.
+        
+        We must respect our health workers and teachers and improve their quality of life.
+        
+        We must increase their wages. We must accommodate and improve the quality of life of our teachers.
+        
+        With the right programs, such as athletic scholarships, scholarships for Islamic boarding school students, and free public transportation for students, senior citizens and persons with disabilities, we will not widen the gap between the rich and the poor.
+        
+        We will improve the management of our social security network, and the Social Security Administrator for Health (BPJS Kesehatan) to prevent deficits and advance quality health care.
+        
+        We will fight for social security for all.
+        
+        We will strengthen the family planning program so it will spare Indonesia dormancy due to a population explosion.
+        
+        We will fight for free milk and free lunches at all needy schools, which we hope will decrease stunting.
+        
+        Our target is that we must be equal to our neighbors, such as Vietnam and Thailand.
+        
+        For persons with disabilities: We will construct infrastructure that is friendly to persons with disabilities and we will guarantee proper and respectable employment for them.
+        
+        We will improve the quality of schools, higher education institutions and Islamic boarding schools.
+        
+        We will improve the prosperity of teachers and education workers, including temporary teachers and teachers at Islamic boarding schools.
+        
+        We will establish a hajj funding institution to assist prospective pilgrims.
+        
+        We would like to negotiate with the Saudi Arabian government to construct buildings owned by Indonesia in the holy city to reduce the cost of the hajj.
+        
+        Our third point of focus is to ensure justice in the field of law and to improve the quality of our democracy.
+        
+        We will guarantee freedom of the press, speech and assembly.
+        
+        We will stop threats of persecution against individuals, organizations and the media that are critical of the government.
+        
+        We will guarantee our ulemas the respect they deserve, and their right to be free from criminal threats. This will be very significant, because the role of the ulemas in our fight for independence was also monumental.
+        
+        Yes, Indonesia's proclamation of independence was made in Jakarta. But I will say to you today that our spirit for independence was tested in East Java, which peaked when the people of East Java rejected a foreign ultimatum and they were supported by the ulemas' jihad resolution.
+        
+        And with that, as Indonesians, we shall not disrespect our Islamic elders, our ulemas and other religious leaders among us.
+        
+        We will also guarantee that all organizations upholding Pancasila and the 1945 Constitution of the Republic of Indonesia shall not be stigmatized and judged without proper trial.
+        
+        We will guarantee that our laws will not discriminate. Everyone has a right to justice. Justice is not only for the wealthy and powerful.
+        
+        To eradicate corruption, we will strengthen the Corruption Eradication Commission (KPK), police, prosecuting authority and the judiciary.
+        
+        We will guarantee that there shall no longer be unnecessary intervention and politicization of law enforcement and corruption eradication in this land.
+        
+        We will also increase transparency and accountability of financial institutions, from the central to regional governments.
+        
+        Our fourth point of focus is to provide a safe, comfortable and sovereign Indonesia for its people.
+        
+        National security and the sovereignty of the Republic of Indonesia are precursors for development, advancement and prosperity.
+        
+        And with that, we will guarantee that the Indonesian Military (TNI) will be a strong and internationally renowned force.
+        
+        We will also improve policing capabilities that can prevent and solve new threats, such as cybercrime, human trafficking, international drug trafficking, money laundering and more.
+        
+        And we will improve the state's ability to prevent, detect in advance, resolve, rehabilitate and reconstruct conditions caused by natural disasters.
+        
+        To all my fellow countrymen, our fifth point of focus is to strengthen the characteristics and values that reflect the noble nation that is Indonesia.
+        
+        We believe that the most fundamental aspect of Indonesia as a nation-state is strong morale and character.
+        
+        To be an independent, sovereign, prosperous and victorious nation, it must go through the developmental process of nation building, achieved by way of character building.
+        
+        And with that, together with the Victorious Indonesia vision and mission, today we launch a book that elaborates the necessary qualities required to realize a Victorious Indonesia.
+        
+        We will instill and practice the most noble values and philosophies rooted in Indonesia's history and ancestry.
+        
+        Like a warrior who never surrenders. Like the phrase, "sabdo pandito ratu," to stay true to our word, or the phrase, "rame ing gaweh, sepi ing pamrih," that fights for the broader interests of the many, not the few.
+        
+        Like a leader who serves the impoverished to achieve better lives, "wong cilik iso gumuyu."
+        
+        To have confidence in our own strengths, to stand on our own two feet and the belief that death is better than to be colonized once more.
+        
+        To my fellow Indonesians wherever you may be, we must ensure security for all. Justice for all. Prosperity for all. Not security only for the wealthy. Not justice only for those who can afford it. Not prosperity for the few, even less than 1 percent of the Indonesian population.
+        
+        Like what Bung Karno stated during the Indonesian Independence Preparation Examination Assembly (BPUPKI) hearing on June 1, 1945, and I quote:
+        
+        "We want to establish a country for all. Not for one person, not for one group, not for nobles, not for the rich. But for all."
+        
+        "This country, the Republic of Indonesia, does not belong to one group, does not belong to one religion, does not belong to one ethnic group, nor does it belong to a particular tradition. It belongs to all of us, from Sabang to Merauke."
+        
+        To my fellow Indonesians, many have asked me: Aren't your action plans too ambitious? Are you confident you can execute all this?
+        
+        And to all who have asked, I say: We are racing against time.
+        
+        Every year our population increases by 3.5 million people. This means that 10 years from now, we must provide housing, schooling, jobs for 35 million people. This is a lot larger than Malaysia's population and seven times larger than that of Singapore.
+        
+        If we don't execute meaningful programs, if we don't carry out substantial transformation, we may find ourselves stuck in a concerning future.
+        
+        Other nations have even showed strategic analyses that concluded the possibility of Indonesia's disintegration as a united republic.
+        
+        We, Prabowo Subianto and Sandiaga Uno, ask for the people's mandate because we want to guarantee that it shall not happen. We want an imperishable, strong, safe, just, and prosperous Republic of Indonesia.
+        
+        If we receive this mandate from the Indonesian people on April 17, 2019 to execute our programs, we will put the best and brightest sons and daughters of Indonesia in the frontline.
+        
+        We will not look at their political backgrounds. We will not look at their ethnicity, religion. We will not look at their party attires.
+        
+        We will choose intelligent sons and daughters of Indonesia, who uphold integrity, honesty and can work most proficiently within the state apparatus. We will create a diverse frontline, upholding Bhinneka Tunggal Ika.
+        
+        A capable and intelligent frontline to carry out growth for the interest of the many, who can realize a Victorious Indonesia.
+        
+        My fellow countrymen, these are our core ideas. These are the things we will fight for, we will work towards. And if by the grace of God, on April 17, 2019, our nomination will have gained the trust of the people in the upcoming presidential elections, we will carry out the people's mandate to establish a secure, just and prosperous Indonesia for all while continuing the efforts of our predecessors, presidents Sukarno, Suharto, Habibie, Abdurrahman Wahid, Megawati, Susilo Bambang Yudhoyono and Joko Widodo.
+        
+        To continue this great work of building our country, we need all your help. We need your undying support. We need, fundamentally, the trust of each and every one of you.
+        
+        In the Islamic faith, it is written in our Holy Koran, as revealed in Surah Ar-Ra'd, verse 11: "Indeed, Allah will not change the condition of a people until they change what is in themselves."
+        
+        We thank all of you present today who have sacrificed your time to be with us as we share our vision and mission for our beloved nation.
+        
+        To those among you who were previously reluctant to support but upon hearing our vision and mission statement decided to join our cause, we thank you for joining us.
+        
+        To my fellow countrymen, God willing, on April 17, 2019, with your support, with your hard work, the beginning of a great victory of the Indonesian people is at hand.
+        
+        For those of you who remain unconvinced, we are ready to have a dialogue to answer your doubts.
+        
+        And today, let me testify. If I am chosen with Sandiaga, I will work for all the people of Indonesia, including many among you, in this room today, who have not given us your vote of confidence.
+        
+        My fellow countrymen, finally, as a former officer, I would like to close this speech by sending a special message to my younger brothers and sisters, fellow officers within the Indonesian Military, National Police and intelligence services on active duty across our nation.
+        
+        I speak to all of you today to give advice and counsel as an older brother to his younger sibling. As your senior. Remember our oath. Remember the TNI's eight vows.
+        
+        We must be friendly to our people. We must be courteous to our people. We must never harm or hurt them in any way.
+        
+        Remember, it is the people who raise the military, police and intelligence services. It is them who feed, clothe, provide knowledge, careers and ranks; it is not from individuals but solely from the people.
+        
+        Thus, be loyal to the nation and the country. Not loyal to specific regimes, nor specific individuals and least of all to specific political parties.
+        
+        Our people yearn for their officials to be steadfast and do what is best to protect all of Indonesia's citizens.
+        
+        Remember, there exists not a power on earth that is lasting if it is not loved from within, loved by its own people.
+        
+        My fellow countrymen, thank you for your attention. Thank you for supporting me, Prabowo Subianto and Sandiaga Salahuddin Uno.
+        
+        Believe me, that we are on the right path. We are here to defend justice, truth and honesty.
+        
+        We firmly believe that God almighty is with us, because the creator always blesses those who fight along the righteous path.
+        
+        Wassalamualaikum warahmatullahi wabarakatuh.
+        
+        Peace be with all of us. Good evening. Carry on! Keep fighting! Freedom! Freedom! Freedom!
+        
         """
     }
 }

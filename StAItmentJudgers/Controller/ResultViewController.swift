@@ -46,14 +46,6 @@ class ResultViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
-    
-    func checkArray(item : AnyObject) -> Bool {
-        return item is Array<AnyObject>
-    }
-    
-//    func transformValue(data: Profile) -> Array<Any> {
-//        let v = profileData.flatMap(<#T##transform: (Profile) throws -> U?##(Profile) throws -> U?#>)
-//    }
 }
 
 extension ResultViewController: UICollectionViewDataSource {

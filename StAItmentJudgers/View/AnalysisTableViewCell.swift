@@ -14,7 +14,8 @@ class AnalysisTableViewCell: UITableViewCell {
        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Openesss"
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.boldSystemFont(ofSize: 13)
+        label.textColor = .white
         return label
     }()
     
@@ -23,6 +24,7 @@ class AnalysisTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "90%"
         label.font = UIFont.systemFont(ofSize: 13)
+        label.textColor = .white
         return label
     }()
     

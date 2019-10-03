@@ -29,26 +29,17 @@ class ListFiguresViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSpeches = [SpeechModel(name: "Winston Churchill", title: "We Shall Fight on the Beaches", link: "https://www.artofmanliness.com/we-shall-fight-on-the-beaches-by-winston-churchill/", image: #imageLiteral(resourceName: "winston-churchill"), speechText: .winstonChurchill),
-                       SpeechModel(name: "Franklin Delano Roosevelt", title: "First Inaugural Address", link: "https://www.artofmanliness.com/first-inaugural-address-of-franklin-d-roosevelt/", image: #imageLiteral(resourceName: "franklin-d-roosevelt"), speechText: .franklinRoosevelt),
-                       SpeechModel(name: "John F. Kennedy", title: "Inauguration Address", link: "https://www.artofmanliness.com/inaugrual-address-of-john-f-kennedy/", image: #imageLiteral(resourceName: "john-f-kennedy"), speechText: .johnFKennedy),
-                       SpeechModel(name: "Ronald Reagan", title: "Remarks at the Brandenburg Gate", link: "https://www.artofmanliness.com/address-to-nation-on-the-challenger-by-ronald-regan/", image: #imageLiteral(resourceName: "ronald-reagan"), speechText: .ronaldReagan),
-                       SpeechModel(name: "Mahatma Gandhi", title: "Quit India", link: "https://www.artofmanliness.com/quit-india-speech-by-ghandi/", image: #imageLiteral(resourceName: "mahatma-gandhi"), speechText: .mahatmaGandhi),
+        dataSpeches = [
+                      SpeechModel(name: "Joko Wiodo", title: "First Political Speech Since his Reelection", link: "https://www.thejakartapost.com/news/2019/07/15/we-can-be-one-of-strongest-countries-in-world-jokowis-full-speech.html", image: #imageLiteral(resourceName: "jokowi"), speechText: .jokowi),
+                      SpeechModel(name: "Prabowo Subianto", title: "First National Address of the Current Election Campaign", link: "https://jakartaglobe.id/context/full-text-of-presidential-candidate-prabowo-subiantos-national-address/", image: #imageLiteral(resourceName: "prabowo"), speechText: .prabowo), SpeechModel(name: "Winston Churchill", title: "We Shall Fight on the Beaches", link: "https://www.artofmanliness.com/we-shall-fight-on-the-beaches-by-winston-churchill/", image: #imageLiteral(resourceName: "winston-churchill"), speechText: .winstonChurchill),
+                      SpeechModel(name: "Franklin Delano Roosevelt", title: "First Inaugural Address", link: "https://www.artofmanliness.com/first-inaugural-address-of-franklin-d-roosevelt/", image: #imageLiteral(resourceName: "franklin-d-roosevelt"), speechText: .franklinRoosevelt),
+                      SpeechModel(name: "John F. Kennedy", title: "Inauguration Address", link: "https://www.artofmanliness.com/inaugrual-address-of-john-f-kennedy/", image: #imageLiteral(resourceName: "john-f-kennedy"), speechText: .johnFKennedy),
+                      SpeechModel(name: "Ronald Reagan", title: "Remarks at the Brandenburg Gate", link: "https://www.artofmanliness.com/address-to-nation-on-the-challenger-by-ronald-regan/", image: #imageLiteral(resourceName: "ronald-reagan"), speechText: .ronaldReagan),
+                      SpeechModel(name: "Mahatma Gandhi", title: "Quit India", link: "https://www.artofmanliness.com/quit-india-speech-by-ghandi/", image: #imageLiteral(resourceName: "mahatma-gandhi"), speechText: .mahatmaGandhi),
         ]
         title = "Speeches"
-        
         setupCoolectionView()
         setupFloatingButton()
-//        let url = URL(string: "https://jamesclear.com/great-speeches/the-danger-of-a-single-story-by-chimamanda-ngozi-adichie")
-//        let safari = SFSafariViewController(url: url!, entersReaderIfAvailable: true)
-//        present(safari, animated: true, completion: nil)
-//        do {
-//            let url = Bundle.main.url(forResource: "test", withExtension: "htm")!
-//            let htmlString = try String(contentsOf: url)
-//            webView.loadHTMLString(htmlString, baseURL: nil)
-//        } catch {
-//            print("error")
-//    }
         
     }
     
@@ -122,17 +113,13 @@ extension ListFiguresViewController: UICollectionViewDelegate {
         vc.view.backgroundColor = .white
         vc.imageFigure.hero.id = heroId
         navigationController?.present(vc, animated: true, completion: nil)
-        
-        
-//        let vc = ResultViewController()
-//        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 extension ListFiguresViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenSize = UIScreen.main.bounds
-        return CGSize(width: screenSize.width, height: (collectionView.frame.height / 1.6))
+        return CGSize(width: screenSize.width, height: 410)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

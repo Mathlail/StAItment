@@ -21,11 +21,11 @@ class DetailSpeechViewController: UIViewController, NVActivityIndicatorViewable 
         let sc = UIScrollView()
         sc.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 11.0, *) {
-            sc.backgroundColor = UIColor(named: "Dark")
             sc.contentInsetAdjustmentBehavior = .never
         } else {
             // Fallback on earlier versions
         }
+        sc.backgroundColor = UIColor().getDarkColor()
         sc.isScrollEnabled = true
         return sc
     }()
@@ -33,22 +33,14 @@ class DetailSpeechViewController: UIViewController, NVActivityIndicatorViewable 
     lazy var innerView: UIView = {
         let vw = UIView()
         vw.translatesAutoresizingMaskIntoConstraints = false
-        if #available(iOS 11.0, *) {
-            vw.backgroundColor = UIColor(named: "Dark")
-        } else {
-            // Fallback on earlier versions
-        }
+        vw.backgroundColor = UIColor().getDarkColor()
         return vw
     }()
     
     lazy var speechTextView: UITextView = {
         let tf = UITextView()
         tf.isScrollEnabled = false
-        if #available(iOS 11.0, *) {
-            tf.backgroundColor = UIColor(named: "Dark")
-        } else {
-            // Fallback on earlier versions
-        }
+        tf.backgroundColor = UIColor().getDarkColor()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.textColor = .white
@@ -57,11 +49,7 @@ class DetailSpeechViewController: UIViewController, NVActivityIndicatorViewable 
     
     lazy var safeAreaView: UIView = {
         let vw = UIView()
-        if #available(iOS 11.0, *) {
-            vw.backgroundColor = UIColor(named: "Dark")
-        } else {
-            // Fallback on earlier versions
-        }
+        vw.backgroundColor = UIColor().getDarkColor()
         vw.translatesAutoresizingMaskIntoConstraints = false
         return vw
     }()
@@ -111,9 +99,9 @@ class DetailSpeechViewController: UIViewController, NVActivityIndicatorViewable 
         super.viewWillAppear(animated)
         guard let speech = speechModel else { return }
         let speechText = getSpeech(figure: speech.speechText)
-        speechTextView.text = speechText
+        speechTextView.text = "\(speechText) \nSource: \(speech.link)"
         imageFigure.image = speech.image
-        heightConstraint?.constant = speechText.getTextHeight(UIScreen.main.bounds.width - 30 , font: UIFont.systemFont(ofSize: 14)) + 25
+        heightConstraint?.constant = speechText.getTextHeight(UIScreen.main.bounds.width - 30 , font: UIFont.systemFont(ofSize: 14)) + 25 + 35
     }
     
     func setupTextfield() {

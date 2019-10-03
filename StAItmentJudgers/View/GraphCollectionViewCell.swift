@@ -16,6 +16,7 @@ class GraphCollectionViewCell: UICollectionViewCell {
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Personality"
+        label.textColor = .white
         return label
     }()
     
@@ -76,7 +77,7 @@ class GraphCollectionViewCell: UICollectionViewCell {
 
 extension GraphCollectionViewCell: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
